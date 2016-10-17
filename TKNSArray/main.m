@@ -98,7 +98,26 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"%@",planets);
         
+        ////Adding/Removing/Replacing objects using Index
         
+        //Insert
+        [planets insertObject:@"Pluto" atIndex:0];
+        
+        NSLog(@"%@",planets);
+        
+        //Remove
+        [planets removeObjectAtIndex:4];
+        
+        NSLog(@"%@",planets);
+        
+        [planets removeObject:@"Mars"];
+        
+        NSLog(@"%@",planets);
+        
+        //Replace
+        [planets replaceObjectAtIndex:3 withObject:@"Neptune"];
+        
+        NSLog(@"%@",planets);
         
     }
     return 0;

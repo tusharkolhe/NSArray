@@ -62,6 +62,27 @@ int main(int argc, const char * argv[]) {
         
         NSArray *roses = @[@"Black Rose", @"White Rose", @"Red Rose", @"Yello Rose"];
         NSLog(@"%@", [roses componentsJoinedByString:@", "]);
+        
+        
+        ////Properties of NSArrays
+        NSString *prop1=Fruits.description;
+        NSLog(@"Test:%@",prop1);
+        
+        NSString *prop2=Fruits.firstObject;
+        NSLog(@"%@",prop2);
+        
+        NSString *prop3=Fruits.lastObject;
+        NSLog(@"%@",prop3);
+        
+        NSString *prop4=Fruits.debugDescription;
+        NSLog(@"%@",prop4);
+        
+        int prop5= (int)Fruits.count;
+        NSLog(@"%d",prop5);
+        
+        int prop6=(int)Fruits.hash;
+        NSLog(@"%d",prop6);
+        
 
     }
     return 0;

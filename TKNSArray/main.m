@@ -52,6 +52,17 @@ int main(int argc, const char * argv[]) {
                                 }];
         NSLog(@"%@", sortedMakes);
 
+        ////Subdividing an array
+        NSArray *lastTwo = [Fruits subarrayWithRange:NSMakeRange(2, 3)];
+        NSLog(@"%@", lastTwo);
+        
+        ////Combining arrays
+        NSArray *comb= [Fruits arrayByAddingObjectsFromArray:Flowers];
+        NSLog(@"%@", comb);
+        
+        NSArray *roses = @[@"Black Rose", @"White Rose", @"Red Rose", @"Yello Rose"];
+        NSLog(@"%@", [roses componentsJoinedByString:@", "]);
+
     }
     return 0;
 }

@@ -23,6 +23,15 @@ int main(int argc, const char * argv[]) {
         
         NSLog(@"Flowers in array are:%@", [Flowers objectAtIndex:1]);
         
+        ////Compareing Two arrays
+        
+        NSArray *Fruits1=@[@"Mango",@"Apple",@"PineApple",@"Banana"];
+
+        if([Fruits isEqualToArray:Fruits1])
+        {
+            NSLog(@"Both Arrays are Same!!!!");
+        }
+
 
     }
     return 0;

@@ -84,6 +84,22 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%d",prop6);
         
 
+        ////NSMUTABLE Array Declearation
+        
+        NSMutableArray *planets=[NSMutableArray arrayWithObjects:@"Sun",@"Mercury",@"Vinus",@"Earth",@"Mars", nil];
+        
+        NSLog(@"%@",planets);
+        
+        [planets addObject:@"Jupiter"];
+        
+        NSLog(@"%@",planets);
+        
+        [planets removeLastObject];
+        
+        NSLog(@"%@",planets);
+        
+        
+        
     }
     return 0;
 }
